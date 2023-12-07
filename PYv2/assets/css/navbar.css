@@ -1,0 +1,35 @@
+.container-1 .hero {
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 30, 30, 0.6);
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.container-1 .hero .navbar {
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-attachment: fixed;
+    position: absolute;
+    z-index: 99;
+}
+.container-1 .hero .navbar img {
+    width: 45px;
+    height: 45px;
+}
+.container-1 .hero .navbar ul {
+    width: auto;
+    height: 40px;
+    background: transparent;
+    padding: 0px 0px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    overflow: hidden;
+    position: right;
+}
