@@ -1,5 +1,57 @@
-.hidden {
-    overflow: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rethink Sans', sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background-image: url(../imgs/mywallpaper.png);
+}
+
+.header {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.header .logo {
+    cursor: pointer;
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+
+.header .logo img {
+    height: 70px;
+    width: auto;
+    transition-duration: 1.5s;
+}
+
+.header .nav-links {
+    list-style: none;
+}
+
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover {
+    transform: scale(1.02);
+}
+
+.header .nav-links a {
+    font-size: 20px;
+    color: aliceblue;
+    text-decoration: none;
 }
 
 #overlay-toggle {
@@ -79,48 +131,4 @@
     to {
       visibility: hidden;
     }
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-image: url(../imgs/mywallpaper.png);
-    color: transparent;
-    font-family: sans-serif;
-}
-
-a {
-    color: #eee;
-}
-
-.container {
-    min-height: 100vh;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-}
-
-.head {
-    opacity: .5;
-    font-size: 18px;
-    position: fixed;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    top: 0;
-    height: 10%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.body {
-    z-index: 3;
-}
-
-.flex {
-    display: flex;
 }
