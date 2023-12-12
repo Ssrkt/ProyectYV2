@@ -80,3 +80,47 @@
       visibility: hidden;
     }
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../imgs/mywallpaper.png);
+    color: transparent;
+    font-family: sans-serif;
+}
+
+a {
+    color: #eee;
+}
+
+.container {
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.head {
+    opacity: .5;
+    font-size: 18px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    height: 10%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body {
+    z-index: 3;
+}
+
+.flex {
+    display: flex;
+}
