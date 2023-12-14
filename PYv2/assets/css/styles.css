@@ -43,6 +43,10 @@ body {
     width: auto;
 }
 
+.header .logo img:hover {
+    cursor: pointer;
+}
+
 .header .nav-links {
     list-style: none;
 }
@@ -69,7 +73,29 @@ body {
 }
 
 .header .nav-links a:hover {
-    color: rgb(166, 191, 236);
+    color: #C8C8C8;
+    cursor: pointer;
+}
+
+.header .btn button {
+    color: #C8C8C8;
+    padding: 9px 25px;
+    background: #07070711;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover {
+    background-color: #000000;
+    color: #C8C8C8;
+    transform: scale(1.1);
+}
+
+.header .btn button {
+    font-weight: 700;
+    color: #C8C8C8;
 }
 
 #overlay-toggle {
