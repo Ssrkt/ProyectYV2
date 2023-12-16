@@ -84,12 +84,12 @@ body {
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
+    transition: all 0.5s ease 0s;
 }
 
 .header .btn button:hover {
-    background-color: #000000;
-    color: #C8C8C8;
+    background-color: #424242;
+    color: #fdfbfb;
     transform: scale(1.1);
 }
 
@@ -176,4 +176,45 @@ body {
     to {
       visibility: hidden;
     }
+}
+
+.category {
+    color: antiquewhite;
+    font-weight: 700;
+    padding: 3% 5%;
+    cursor: pointer;
+}
+
+.container {
+    color: gray;
+    font-weight: 600;
+    padding: 0 5%;
+    cursor: pointer;
+}
+
+.plus {
+    font-size: 25px;
+}
+
+.container .game-list li {
+    display: inline-block;
+    text-align: -webkit-match-parent;
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.container .game-list .game {
+    background-color: #202020;
+    border: none;
+    border-radius: 25px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in 0s;
+}
+
+.container .game-list .game {
+    background-color: #202020;
+    color: #fdfbfb;
+    transform: scale(1.1);
 }
