@@ -1,38 +1,19 @@
-var i=0;
-setInterval(function(){
-    var titles=[
-        "|",
-        "||",
-        "|P|",
-        "|Pr|",
-        "|Pro|",
-        "|Proy",
-        "|Proye|",
-        "|Proyec|",
-        "|Proyec|",
-        "|Proyec |",
-        "|Proyect <|",
-        "|Proyecto <3|",
-        "|Proyecto Y <3",
-        "|Proyecto Y <3|",
-        "|Proyecto <3",
-        "|Proyecto<3|",
-        "|Proyect<|",
-        "|Proyect|",
-        "|Proyec |",
-        "|Proyect|",
-        "|Proyec|",
-        "|Proye|",
-        "|Pro|",
-        "|Pr|",
-        "|P|",
-        "||",
-        "|",
-    ];
+const main_title = new String("Proyecto Y <3"); //'static String
+var index = 0;
+var string = "";
+setInterval(change_title, 1000);
 
-    if(i===titles.length) {
-        i=0;
+
+function change_title() {
+    if (index < main_title.length) {
+        string+=main_title[index];
+        index+=1;
+        console.log(string);
+    } else {
+        index = 0;
+        string = "";
     }
-    document.title = titles[i];
-    i++;
-}, 400);
+
+    document.title = "|" + string + "|";
+
+}
