@@ -16,4 +16,5 @@ function change_title() {
 
     document.title = "|" + string + "|";
 
+;
 }
