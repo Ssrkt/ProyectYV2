@@ -4,11 +4,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 20px;
 }
 
 body {
     background-image: url(../imgs/mywallpaper.png);
+    background-size: cover;
+    background-attachment: fixed;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -18,7 +19,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 85px;
-    padding: 0px 8%;
+    padding: 0px 3%;
 }
 
 .header .logo {
@@ -33,7 +34,9 @@ body {
 @keyframes rotar {
     from {
         transform: rotate(0deg);
-    }to{
+    }
+
+    to {
         transform: rotate(360deg);
     }
 }
@@ -43,8 +46,13 @@ body {
     width: auto;
 }
 
+.header .logo img:hover {
+    cursor: pointer;
+}
+
 .header .nav-links {
     list-style: none;
+    text-align: center;
 }
 
 .header .nav-links li {
@@ -69,17 +77,42 @@ body {
 }
 
 .header .nav-links a:hover {
-    color: rgb(166, 191, 236);
+    color: #C8C8C8;
+    cursor: pointer;
+}
+
+.header .btn button {
+    color: #C8C8C8;
+    padding: 9px 25px;
+    background: #07070711;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+.header .btn button:hover {
+    background-color: #424242;
+    color: #fdfbfb;
+    transform: scale(1.1);
+}
+
+.header .btn button {
+    font-weight: 700;
+    font-size: 18px;
+    color: #C8C8C8;
 }
 
 #overlay-toggle {
     position: absolute;
     display: none;
 }
+
 .overlay {
     z-index: 1;
     background: black;
 }
+
 .overlay label {
     display: grid;
     place-items: center;
@@ -89,30 +122,37 @@ body {
     color: rgb(255, 255, 255);
     font-size: 2rem;
 }
+
 .no-hover {
     display: block;
 }
+
 .hover {
     display: none;
 }
-#overlay-toggle:checked ~ .overlay {
+
+#overlay-toggle:checked~.overlay {
     animation-fill-mode: forwards;
     animation-name: fade, hide;
     animation-delay: 0s, 600ms;
     animation-duration: 600ms, 1ms;
 }
-#overlay-toggle:checked ~ .overlay label {
+
+#overlay-toggle:checked~.overlay label {
     animation-fill-mode: forwards;
     animation-name: fade;
     animation-delay: 0s;
     animation-duration: 500ms;
 }
+
 .no-hover {
     display: block;
 }
+
 .hover {
     display: none;
 }
+
 .fullscreen {
     position: fixed;
     top: 50%;
@@ -121,33 +161,75 @@ body {
     min-height: 100vh;
     min-width: 100vw;
 }
-#overlay-toggle:checked ~ .overlay {
+
+#overlay-toggle:checked~.overlay {
     animation-fill-mode: forwards;
     animation-name: fade, hide;
     animation-delay: 0s, 600ms;
     animation-duration: 600ms, 1ms;
 }
-#overlay-toggle:checked ~ .overlay label {
+
+#overlay-toggle:checked~.overlay label {
     animation-fill-mode: forwards;
     animation-name: fade;
     animation-delay: 0s;
     animation-duration: 500ms;
 }
+
 @media(hover: hover) {
     .hover {
-      display: block;
+        display: block;
     }
+
     .no-hover {
-      display: none;
+        display: none;
     }
 }
-@keyframes fade{
+
+@keyframes fade {
     to {
-      opacity: 0;
+        opacity: 0;
     }
 }
+
 @keyframes hide {
     to {
-      visibility: hidden;
+        visibility: hidden;
     }
+}
+
+.category {
+    color: antiquewhite;
+    font-weight: 700;
+    padding: 3% 5%;
+    cursor: pointer;
+}
+
+.plus {
+    font-size: 25px;
+}
+
+.game-list {
+    padding: 2% 3%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.game {
+    padding: 10px;
+    background-color: #202020;
+    border-radius: 10px;
+}
+
+.game>img {
+    height: 300px;
+}
+
+.game>h2 {
+    color: rgb(212, 212, 212);
+}
+
+.game>p {
+    color: #9c9c9c;
 }
