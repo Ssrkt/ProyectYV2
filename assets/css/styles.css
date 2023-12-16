@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 20px;
 }
 
 body {
@@ -99,6 +98,7 @@ body {
 
 .header .btn button {
     font-weight: 700;
+    font-size: 18px;
     color: #C8C8C8;
 }
 

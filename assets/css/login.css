@@ -1,0 +1,179 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,300&amp;display=swap";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../imgs/mywallpaper.png);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#overlay-toggle {
+    position: absolute;
+    display: none;
+}
+.overlay {
+    z-index: 1;
+    background: black;
+}
+.overlay label {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vw;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
+.no-hover {
+    display: block;
+}
+.hover {
+    display: none;
+}
+#overlay-toggle:checked ~ .overlay {
+    animation-fill-mode: forwards;
+    animation-name: fade, hide;
+    animation-delay: 0s, 600ms;
+    animation-duration: 600ms, 1ms;
+}
+#overlay-toggle:checked ~ .overlay label {
+    animation-fill-mode: forwards;
+    animation-name: fade;
+    animation-delay: 0s;
+    animation-duration: 500ms;
+}
+.no-hover {
+    display: block;
+}
+.hover {
+    display: none;
+}
+.fullscreen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 100vh;
+    min-width: 100vw;
+}
+#overlay-toggle:checked ~ .overlay {
+    animation-fill-mode: forwards;
+    animation-name: fade, hide;
+    animation-delay: 0s, 600ms;
+    animation-duration: 600ms, 1ms;
+}
+#overlay-toggle:checked ~ .overlay label {
+    animation-fill-mode: forwards;
+    animation-name: fade;
+    animation-delay: 0s;
+    animation-duration: 500ms;
+}
+@media(hover: hover) {
+    .hover {
+      display: block;
+    }
+    .no-hover {
+      display: none;
+    }
+}
+@keyframes fade{
+    to {
+      opacity: 0;
+    }
+}
+@keyframes hide {
+    to {
+      visibility: hidden;
+    }
+}
+
+.header {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 0px 8%;
+}
+
+.header .logo {
+    cursor: pointer;
+    animation-name: rotar;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: inline-block;
+    animation-duration: 50s;
+}
+
+@keyframes rotar {
+    from {
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+.header .logo img {
+    height: 60px;
+    width: auto;
+}
+
+.header .logo img:hover {
+    cursor: pointer;
+}
+
+.header .nav-links {
+    list-style: none;
+}
+
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.header .nav-links li:hover {
+    transform: scale(1.002);
+}
+
+.header .nav-links a {
+    width: auto;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    font-size: 18px;
+    color: #C8C8C8;
+    text-decoration: none;
+    font-weight: 700;
+    position: relative;
+}
+
+.header .nav-links a:hover {
+    color: #C8C8C8;
+    cursor: pointer;
+}
+
+.header .btn button {
+    color: #C8C8C8;
+    padding: 9px 25px;
+    background: #07070711;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+.header .btn button:hover {
+    background-color: #424242;
+    color: #fdfbfb;
+    transform: scale(1.1);
+}
+
+.header .btn button {
+    font-weight: 700;
+    font-size: 18px;
+    color: #C8C8C8;
+}
