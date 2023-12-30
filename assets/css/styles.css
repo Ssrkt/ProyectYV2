@@ -244,3 +244,14 @@ body {
 .category2 {
     margin: 1px;
 }
+
+.subcat {
+    list-style: none;
+    text-align: left;
+}
+
+.subcat>li {
+    display: inline-block;
+    padding: 0 6px;
+    color: #8f8f8f;
+}
