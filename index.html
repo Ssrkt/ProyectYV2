@@ -46,52 +46,64 @@
         <a href="subpages/login.html" class="btn"><button>Sign In</button></a>
     </header>
     <div class="category">
-        <a href="PYv2/sites/mods.html" class="categories    ">
-            <h1>Juegos<span class="plus">&#43;</span></h1>
-            <ul class="subcat"> <li><p>mods</p></li> <li><p>versions</p></li> </ul>
-        </a>
-        <div class="container">
-            <div class="game-list">
-                <a class="game">
-                    <img src="https://static-cdn.jtvnw.net/ttv-boxart/Minecraft-285x380.jpg" href="#"
-                        alt="minecraft" width="190" height="auto" style="color: transparent;" decoding="async">
-                    <h2>Minecraft</h2>
-                </a>
-                <a class="game">
-                    <img src="https://i11c.3djuegos.com/juegos/1012/grand_theft_auto_san_andreas/fotos/ficha/grand_theft_auto_san_andreas-3785650.jpg"
-                        alt="gta san andreas" href="#" width="190" height="auto" style="color: transparent;" decoding="async">
-                    <h2>Gta: San Andreas</h2>
-                </a>
-                <a class="game">
-                    <img src="" alt="" href="#" width="190" height="auto" style="color: transparent;" decoding="async">
-                    <h2>si</h2>
-                    <p>asdasd</p>
-                </a>
-            </div>
-        </div>
         <a href="PYv2/sites/mods.html" class="categories">
-            <h1>Mods<span class="plus">&#43;</span></h1>
+            <h1>Juegos<span class="plus">&#43;</span></h1>
         </a>
         <div class="container">
-            <div class="game-list">
+            <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
+            onclick="app.processingButton(event)">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+                class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512">
+                <path fill="currentColor"
+                    d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                </path>
+            </svg>
+            </button>   
+            <div class="container-list">
                 <a class="game">
+                    <div class="art">
                     <img src="https://static-cdn.jtvnw.net/ttv-boxart/Minecraft-285x380.jpg" href="#"
-                        alt="minecraft" width="190" height="auto" style="color: transparent;" decoding="async">
-                    <h2>Minecraft</h2>
+                        alt="minecraft" width="170" height="250" style="color: transparent;" decoding="async">
+                    </div>
                 </a>
                 <a class="game">
-                    <img src="https://i11c.3djuegos.com/juegos/1012/grand_theft_auto_san_andreas/fotos/ficha/grand_theft_auto_san_andreas-3785650.jpg"
-                        alt="gta san andreas" href="#" width="190" height="auto" style="color: transparent;" decoding="async">
-                    <h2>Gta: San Andreas</h2>
+                    <img src="assets/imgs/grand_theft_auto_san_andreas-3785650.webp"
+                        alt="gta san andreas" href="#" width="170" height="80" style="color: transparent;" decoding="async">
                 </a>
                 <a class="game">
-                    <img src="" alt="" href="#" width="190" height="auto" style="color: transparent;" decoding="async">
-                    <h2>si</h2>
-                    <p>asdasd</p>
+                    <img src="assets/imgs/a42a507709df7f7741570fef000f5588.webp" alt="" href="#" width="170" height="80" style="color: transparent;" decoding="async">
+                </a>
+                <a class="game">
+                    <img src="assets/imgs/a42a507709df7f7741570fef000f5588.webp" alt="" href="#" width="170" height="80" style="color: transparent;" decoding="async">
+                </a>
+                <a class="game">
+                    <img src="assets/imgs/a42a507709df7f7741570fef000f5588.webp" alt="" href="#" width="170" height="80" style="color: transparent;" decoding="async">
+                </a>
+                <a class="game">
+                    <img src="assets/imgs/a42a507709df7f7741570fef000f5588.webp" alt="" href="#" width="170" height="80" style="color: transparent;" decoding="async">
+                </a>
+                <a class="game">
+                    <img src="assets/imgs/a42a507709df7f7741570fef000f5588.webp" alt="" href="#" width="170" height="80" style="color: transparent;" decoding="async">
+                </a>
+                <a class="game">
+                    <img src="assets/imgs/a42a507709df7f7741570fef000f5588.webp" alt="" href="#" width="170" height="80" style="color: transparent;" decoding="async">
                 </a>
             </div>
+            <button class="carrusel-arrow carrusel-next" id="button-next" data-button="button-next"
+            onclick="app.processingButton(event)">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512">
+                <path fill="currentColor"
+                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                </path>
+            </svg>
+            </button>
         </div>
     </div>
+    <script src="assets/scripts/carousel.js"></script>
+
 </body>
 
 </html>

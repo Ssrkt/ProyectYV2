@@ -145,14 +145,6 @@ body {
     animation-duration: 500ms;
 }
 
-.no-hover {
-    display: block;
-}
-
-.hover {
-    display: none;
-}
-
 .fullscreen {
     position: fixed;
     top: 50%;
@@ -216,7 +208,7 @@ body {
     font-size: 25px;
 }
 
-.game-list {
+.container-list {
     padding: 2% 3%;
     display: flex;
     flex-direction: row;
@@ -224,9 +216,9 @@ body {
 }
 
 .game {
-    padding: 10px;
+    padding: 6px;
     background-color: #202020;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .game>img {
@@ -251,7 +243,89 @@ body {
 }
 
 .subcat>li {
+    justify-content: space-between;
     display: inline-block;
     padding: 0 6px;
     color: #8f8f8f;
+}
+
+@media(min-width:768px) {
+    .container{
+        margin: 0px 5px;
+    }
+}
+
+.container-list {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 90vw;
+    overflow: hidden;
+}
+
+.game {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+.container {
+    position: relative;
+    width: 210px;
+    padding: 0 10px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+}
+
+.container a img {
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    transition: .3 ease-in-out;
+}
+
+@media(min-width:768px) {
+    .container {
+        width: auto;
+    }
+    .container a img {
+        width: 250;
+    }
+}
+
+.carrusel-arrow {
+    border-radius: 30px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+}
+
+-carrusell-arrow:focus {
+    outline: 0;
+}
+
+.carrusel-arrow svg {
+    width: 12px;
+    height: 100%;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.carrusel-prev {
+    left: 0;
+}
+
+.carrusel-next {
+    right: 0px;
 }
