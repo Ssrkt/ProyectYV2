@@ -20,12 +20,12 @@ function App() {
 
 let prevAction = (leftPosition, carruselWidth, track) => {
     if(leftPosition > 0) {
-        track.style.left = ´${(-1 * (leftPosition - carruselWidth))}px´
+        track.style.left = '${(-1 * (leftPosition - carruselWidth))}px'
     }
 }
 
 let nextAction = (leftPosition, trackWidth, listWidth, carruselWidth, track) => {
     if(leftPosition < (trackWidth - listWidth)) {
-        track.style.left = ´${(-1 * (leftPosition - carruselWidth))}px´
+        track.style.left = '${(-1 * (leftPosition - carruselWidth))}px'
     }
 }
